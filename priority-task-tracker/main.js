@@ -8,6 +8,9 @@ function add() {
     } else {
         let item = document.createElement('li')
         item.innerHTML = NewTask.value // adciona o conteudo dentro do no li
+        item.addEventListener('click', function() {
+            item.classList.toggle('done');
+        });
         task.appendChild(item)
         list.push(NewTask.value)
     }

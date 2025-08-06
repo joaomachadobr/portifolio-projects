@@ -18,3 +18,8 @@ body {
 .task-input {
     text-align: center;
 }
+
+.done {
+    text-decoration: line-through;
+    color: grey;
+}
