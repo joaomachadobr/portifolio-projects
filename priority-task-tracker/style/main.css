@@ -1,6 +1,10 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgba(192, 192, 69, 0.849);
+    background-color: rgba(192, 192, 69, 0.849);    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 .container {
@@ -9,10 +13,8 @@ body {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.39);
     border-radius: 10px;
     width: 600px;
-    margin: auto;
+    min-height: 400px; 
 
-    height: 700px; 
-    /* apenas para visualizar */
 }
 
 .title {
@@ -21,9 +23,15 @@ body {
 
 .task-input {
     text-align: center;
+    margin: 10px 0px;
 }
 
 .done {
     text-decoration: line-through;
     color: grey;
+}
+
+.task-list {
+    list-style: none;
+    padding: 10px;
 }
