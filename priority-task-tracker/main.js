@@ -7,10 +7,12 @@ function add() {
         alert('campo vazio')
     } else {
         let item = document.createElement('li')
+        let text = document.createElement('span')
         let button = document.createElement('button')
         button.innerHTML = '❌'
     
-        item.innerHTML = NewTask.value // adciona o conteudo dentro do no li
+        text.innerHTML = NewTask.value // adciona o conteudo dentro do no li
+        item.appendChild(text)
         item.appendChild(button)
         
         item.addEventListener('click', function(e) {
